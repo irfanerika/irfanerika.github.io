@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>latihan html 5</title>
-</head>
-<body>
-<!--judul-->
-  <div id="header"> <h1 align=center>PERKENALAN HTML 5</h1> </div>
-<!--end judul-->
-<!--isi-->
-  <div><p><br><i>Assalamu'alaikum</i></br></p>
-  <p align=center>Halo semua, saya Irfan Erika Ferdian, saya biasa dipanggil Irfan. Saya berasal dari <b>Bandung</b> dan sudah menikah.
-  Saya bergabung dengan <a href="http://www.hacktiv8.com"><b>hacktiv8</b></a> dengan harapan:
- <!--order list--> 
-  <br><ol>
-  <li>belajar programming menjadi menyenangkan</li>
-  <li>belajar programming menjadi mudah dipahami</li>
-  </ol></br>
- <!--end order list--> 
-Untuk tokoh yang diidolakan untuk saat ini belum ada. 
-Untuk lebih kenal lebih lanjut bisa hubungi saya di <a href="mailto:irfanerika@gmail.com" target=_top>irfanerika@gmail.com</a>
+	<head>
+		<title>LATIHAN HTML</title>
+		<link rel="stylesheet" href="styles/style.css" type="text/css" />
+	</head>
+	<body>
+		<!--pembungkus-->
+		<div class="wrapper">
+			<header>
+			 <h1>LATIHAN HTML</h1>
+				<nav>
+					<ul>
+						<li><a href="">ABOUT</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="perkenalan">
+				<article>
+					<figure>
+						<img src="images/foto.jpg" alt="soto" / height="220" width="290">
+					</figure>
+					<hgroup>
+						<h2>Perkenalan</h2>
+					</hgroup>
+					<p>Halo semua, saya Irfan Erika Ferdian, saya biasa dipanggil Irfan. Saya berasal dari Bandung dan sudah menikah.</p>
+				</article>    
 
-  <br>Terima kasih, mohon bimbingannya</br></p>
-</div>
-<!--end isi-->
-<!--penutup-->
-<footer id="footer">
-            <br><p align=center>Copyright &copy <a href="https://www.github.com" target=_blank><img src="image/github.jpg" alt="gambar github" width="100" height="100" align=center ></a><a href="https://irfanerika.github.io">irfanerika.github.io</a></p></br>
-        </footer>
-		<!--end penutup-->
-</body>
+			</section>
+			<aside>
+				<section class="alasan">
+					<h2>Harapan Bergabung dengan <a href="http://www.hacktiv8.com">Hacktiv8</a></h2>
+					<ol>
+					<li>Belajar programming menjadi menyenangkan</li>
+					<li>Belajar programming menjadi mudah</li>
+					<li>Menambah ilmu</li>
+					<ol/>
+					
+				<br><br><br><h2>KONTAK</h2><br><a href="mailto:irfanerika@gmail.com" target=_top>irfanerika@gmail.com</a></br>
+				</section>
+			</aside>
+			<footer>
+				&copy; <a href="https://irfanerika.github.io">irfanerika.github.io</a>
+			</footer>
+		</div><!-- .wrapper -->
+	</body>
 </html>
