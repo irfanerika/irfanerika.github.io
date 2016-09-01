@@ -64,6 +64,8 @@ nav, footer {
 	
 /* Navigasi unorder list */
 nav ul {
+	list-style-type: none;
+    overflow: hidden;
 	margin: 0px;
 	padding: 4.2px;}
 	
@@ -71,7 +73,7 @@ nav ul {
 nav li {
 	display: inline;
 	padding-top:50px;
-	margin-left: 863px;}
+	margin-right: 10px;}
 	
 /* Navigasi link list */
 nav li a {
@@ -269,3 +271,38 @@ button:active {
   width: 30px;
 }
 
+input, textarea {
+ padding: 10px;
+ border: 1px solid #E5E5E5;
+ width: 200px;
+ color: #999999;
+ box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+ -moz-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+ -webkit-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+}
+textarea{
+ width: 400px;
+ height: 150px;
+ max-width: 400px;
+ line-height: 18px;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus{
+ border-color: 1px solid #06f;
+ box-shadow: #333 0px 0px 8px;
+ -moz-box-shadow: #333 0px 0px 8px;
+ -webkit-box-shadow: #333 0px 0px 8px;
+}
+.form label {
+ margin-left: 17px;
+ color: #333 ;
+}
+.submit input {
+ width: 100px;
+ height: 40px;
+ background-color: #06f;
+ color: #fff;
+ border-radius: 4px;
+ -moz-border-radius:4px;
+ -webkit-border-radius:4px;
+} 
