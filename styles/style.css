@@ -12,11 +12,11 @@ body {
 	position:relative;
 	width: 940px;
 	margin: 20px auto 20px auto;
-	border: 2px solid #000000;
+	border: 1px solid #000000;
 	background-color: #ffffff;}
 header {
 	position:relative;
-	height: 300px;
+	height: 320px;
 	background-size: 950px 400px;
 	background-repeat:no-repeat;
     background-image: url(../images/header.jpg);}
@@ -25,29 +25,58 @@ h1 {
 	text-indent: -9999px;
 	width: 940px;
 	margin: 0px;}
+h2 {
+	margin: 10px 0px 0px 0px;}
 nav, footer {
+	overflow:auto;
 	position:fixed;
 	clear: both;
 	color: #ffffff;
 	background-color: #3f3636;
 	height: 30px;
+	width:939px;
 	margin: -20px auto auto auto;
 	z-index:1000;}
 nav ul {
 	margin: 0px;
-	padding: 5px 0px 5px 30px;}
+	padding: 4.2px;}
 nav li {
 	display: inline;
-	margin-left: 855px;}
+	padding-top:50px;
+	margin-left: 863px;}
 nav li a {
 	color: #ffffff;}
 nav li a:hover{
-	color: #000000;}
+	color: red;}
 section.perkenalan {
 	position:relative;
 	float: left;
 	width: 659px;
 	border-right: 1px solid #eeeeee;}
+section.alasan {
+	position:relative;
+	float: left;
+	width: 250px;}
+
+section.alasan ol {
+	margin: 0px;
+	padding: 4.2px;}
+section.alasan li	{
+	padding-top:5px;
+	margin-left:14px;}
+section.alasan h2 a	{
+	color: red;}
+	section.alasan h2 a:hover{
+	color: #000000;}
+section.kontak{
+	position:relative;
+	float: left;
+	width: 250px;
+	margin-top:120px;}
+section.kontak a	{
+	color: red;}
+	section.kontak a:hover{
+	color: #000000;}
 article {
 	position:relative;
 	clear: both;
@@ -55,14 +84,14 @@ article {
 	width: 100%;}
 hgroup {
 	position:relative;
-	margin-top: 40px;}
+	margin-top: 10px;}
 figure {
 	position:relative;
 	float: left;
 	width: 290px;
 	height: 220px;
 	padding: 5px;
-	margin: 20px;
+	margin: 7px;
 	border: 1px solid #eeeeee;}
 aside {
 	position:relative;
@@ -85,9 +114,83 @@ aside h2 {
 	color: #de6581;}
 	1, h2, h3 {
 	font-weight: normal;}
-h2 {
-	margin: 10px 0px 0px 0px;}
+
 footer {
 	position:relative;
 	font-size: 80%;
-	padding: 7px 0px 0px 20px;}
+	padding: 7px 0px 0px 1px;}
+	
+.scale:hover{
+	transform: scale(2.5,2.5);}	
+.skew:hover{
+transform: skewX(30deg); }
+
+figure.rotate {
+  transform-style: preserve-3d;
+}
+figure.rotate:hover {
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+.stage {
+  background: #eaeaed;
+  border-radius: 6px;
+  height: 150px;
+  position: relative;
+  min-width: 10px;
+}
+.stage:hover .ball {
+  animation: slide 2s ease-in-out .5s infinite alternate;
+}
+.stage:active .ball {
+  animation-play-state: paused;
+}
+.ball {
+  background: #2db34a;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
