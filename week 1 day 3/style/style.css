@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*RESET untuk membuat setelan default untuk semua halaman*/
+.header {
+ height:120px;
+ background-color:  #ffff00;
+ border-style: dashed;
+}
+
+body {
+	 background-color: darkorange;
+	 margin: 0px;
+	 padding: 0px;
+}
+
+h1, h2{
+	text-align:center;
+	font-family: serif;
+	color: #ff5050;
+	text-transform: capitalize;
+}
+
+h2 {
+	font-style: italic;
+}
+
+.utama {
+ background-color: #ffffff;
+ width:900px;
+ height:220px;
+ margin-top:10px; /*memberikan jarak dengan menu*/
+ margin-left: 250px;
+ padding-left:20px;
+ border-style: solid;
+ border-width: 2px;
+}
+
+
+
+p {
+	text-align:justify;
+	font-family: Arial;
+	font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+ul {
+	text-align:justify;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+ol {
+	text-align:justify;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.comment {
+	background-color: #f2f2f2;
+	margin-top:20px;
+	float: right;
+	border-style: solid;
+	border-width: 0px 0px 0px 10px;
+	border-top-left-radius: 2em;
+	border-bottom-left-radius: 2em;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-family: Courier;
+}

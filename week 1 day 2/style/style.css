@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*RESET untuk membuat setelan default untuk semua halaman*/
+html {
+ margin:0;
+ padding:0;
+}
+#pembatas {
+ margin: 0 auto;
+ padding-top: 0.1px;
+ background-color: darkorange;
+
+}
+.header {
+ width:auto; /*sesuiakan dengan pembatas*/
+ height:100px;
+ background-color: yellow;
+}
+
+
+.utama {
+ background-color:white;
+ width:auto;
+ height:200px;
+ margin-top:5px; /*memberikan jarak dengan menu*/
+ float:center; /* Diletakan di sebelah tengah*/
+ margin-bottom:5px;
+}
+
+}
+
+
+p {
+	text-align:justify;
+	font-family: Arial, Courier, serif;
+	font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+ul {
+	text-align:justify;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+ol {
+	text-align:justify;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.form label {
+	text-align:left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.comment {
+	background-color: RGBa(255, 255, 255, 0.85);
+	width:auto;
+	height:auto;
+	margin-top:5px;
+	clear:both;
+}
